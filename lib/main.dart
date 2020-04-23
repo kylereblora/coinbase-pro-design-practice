@@ -1,9 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'home.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle.light
+  );
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

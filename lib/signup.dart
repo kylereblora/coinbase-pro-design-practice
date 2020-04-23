@@ -145,9 +145,7 @@ class _SignUpState extends State<SignUp> {
               ),
             ),
           ),
-          SizedBox(
-            width: 10,
-          ),
+          const SizedBox(width: 10),
           Flexible(
             flex: 5,
             child: Column(
@@ -189,15 +187,15 @@ class _SignUpState extends State<SignUp> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           _buildFirstNameField(),
-          SizedBox(height: 18),
+          const SizedBox(height: 18),
           _buildLastNameField(),
-          SizedBox(height: 18),
+          const SizedBox(height: 18),
           _buildEmailField(),
-          SizedBox(height: 18),
+          const SizedBox(height: 18),
           _buildPasswordField(),
-          SizedBox(height: 18),
+          const SizedBox(height: 18),
           _buildCheckbox('agrees', _agrees),
-          Spacer(),
+          const Spacer(),
           SizedBox(
             width: MediaQuery.of(context).size.width,
             child: RaisedButton(
@@ -210,7 +208,8 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ),
                 disabledColor: Color(0xFF3232ff).withOpacity(0.6)),
-          )
+          ),
+          const SizedBox(height: 12),
         ],
       ),
     );
@@ -226,7 +225,7 @@ class _SignUpState extends State<SignUp> {
           onTap: () {
             Navigator.pop(context);
           },
-          child: Icon(
+          child: const Icon(
             Icons.close,
             color: Colors.black,
           ),
@@ -242,12 +241,12 @@ class _SignUpState extends State<SignUp> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                SizedBox(height: 10),
-                Text(
+                const SizedBox(height: 10),
+                const Text(
                   'Create your account',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Expanded(child: _buildSignUpForm()),
               ],
             ),
